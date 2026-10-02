@@ -4,18 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#07080d">
-<title>Shadow-Shop</title>
 <link rel="manifest" href="./manifest.webmanifest">
-<link rel="icon" href="./icon-192.png" type="image/png">
-<link rel="apple-touch-icon" href="./icon-192.png">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Shadow-Shop V24.0 • Owner Dashboard</title>
 <style>
 :root{--bg:#07080d;--panel:#0d1018;--panel2:#111522;--line:#2b1840;--purple:#9d35ff;--purple2:#c86cff;--text:#f8f6ff;--muted:#aaa6b7;--gold:#e8c77b;--green:#57d99a;--danger:#e05a75}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% -10%,#26103d 0,#07080d 35%);color:var(--text);font-family:Arial,Helvetica,sans-serif;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:flex;min-height:100vh}
 .sidebar{width:210px;position:fixed;inset:0 auto 0 0;background:rgba(5,7,12,.97);border-right:1px solid #241535;padding:18px 14px;z-index:30;overflow:auto}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px;margin:4px 6px 25px}.brand-mark{width:43px;height:43px;border-radius:14px;border:1px solid #9d35ff;background:linear-gradient(145deg,#a83cff,#180b28);display:grid;place-items:center;box-shadow:0 0 25px rgba(157,53,255,.4);font-size:22px}.brand span{color:#c86cff}.nav-title{font-size:12px;color:#a844ff;font-weight:800;margin:16px 8px 8px}.nav-btn{width:100%;border:0;background:transparent;color:#eee;text-align:left;padding:11px 10px;border-radius:10px;display:flex;align-items:center;gap:11px;margin:3px 0}.nav-btn:hover,.nav-btn.active{background:linear-gradient(90deg,#8e2bea,#b34cff);box-shadow:0 8px 25px rgba(145,40,235,.22)}.nav-icon{width:22px;text-align:center;font-size:18px}.sidebar-note{margin:18px 0;padding:14px;border:1px solid #382050;border-radius:13px;background:linear-gradient(160deg,#180c25,#0b0d14);color:#aaa;font-size:12px;line-height:1.45}.sidebar-note b{color:#fff}.main{margin-left:210px;width:calc(100% - 210px);padding-bottom:70px}.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:18px;padding:15px 28px;background:rgba(7,8,13,.88);backdrop-filter:blur(16px);border-bottom:1px solid #21162d}.search{flex:1;max-width:650px;position:relative}.search input{width:100%;background:#0b0d15;border:1px solid #61318a;color:#fff;border-radius:14px;padding:13px 44px 13px 43px;outline:none}.search input:focus{border-color:#b84fff;box-shadow:0 0 0 3px rgba(157,53,255,.12)}.search .sicon{position:absolute;left:15px;top:10px;font-size:20px;color:#aaa}.top-actions{margin-left:auto;display:flex;gap:9px}.icon-btn{width:44px;height:44px;border-radius:13px;border:1px solid #3e2258;background:#0d0f17;color:#fff;position:relative}.icon-btn:hover{border-color:#a94aff;box-shadow:0 0 20px rgba(157,53,255,.2)}.badge{position:absolute;right:-4px;top:-7px;background:#9d35ff;border-radius:999px;min-width:20px;height:20px;padding:2px 5px;font-size:11px;font-weight:900}.hero{margin:18px 28px 0;border:1px solid #4b2470;border-radius:17px;min-height:245px;overflow:hidden;position:relative;background:radial-gradient(circle at 80% 45%,rgba(157,53,255,.65),transparent 30%),linear-gradient(120deg,#10091b,#24103a 55%,#0b0c13)}.hero:before{content:"";position:absolute;inset:-20%;background:repeating-linear-gradient(120deg,transparent 0 35px,rgba(255,255,255,.025) 36px 38px);transform:rotate(-5deg)}.hero-copy{position:relative;padding:35px 38px;max-width:650px}.eyebrow{color:#b94fff;font-weight:900;letter-spacing:2px;font-size:13px}.hero h1{font-size:48px;line-height:1;margin:10px 0}.hero h1 span{color:#b64cff}.hero p{color:#d0cad9;font-size:17px;line-height:1.5;max-width:520px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.primary,.secondary{border:0;border-radius:11px;padding:12px 17px;font-weight:800}.primary{background:linear-gradient(90deg,#8f27ee,#bb4cff);color:#fff}.secondary{background:#0c0e15;color:#fff;border:1px solid #5c2d80}.primary:hover,.secondary:hover{transform:translateY(-1px)}.hero-orb{position:absolute;right:8%;bottom:-45px;width:210px;height:210px;border-radius:50%;border:1px solid #b44fff;box-shadow:0 0 70px rgba(167,54,255,.55),inset 0 0 50px rgba(157,53,255,.18)}.hero-orb:after{content:"✦";position:absolute;inset:0;display:grid;place-items:center;font-size:82px;color:#fff;text-shadow:0 0 30px #b94fff}
-.section{padding:26px 28px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:10px}.section h2{margin:0;font-size:25px}.muted{color:var(--muted)}.pills{display:flex;gap:9px;overflow:auto;padding:17px 0 13px;scrollbar-width:none}.pills::-webkit-scrollbar{display:none}.pill{white-space:nowrap;border:1px solid #4a2864;background:#0c0e15;color:#eee;padding:9px 15px;border-radius:999px}.pill.active,.pill:hover{background:linear-gradient(90deg,#8f2cf0,#b54cff);border-color:#b54cff}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:#0b0e16;border:1px solid #3a2052;border-radius:15px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#a13cff;box-shadow:0 15px 35px rgba(75,20,110,.2)}.art{height:190px;position:relative;overflow:hidden;background:#160a22}.art svg{width:100%;height:100%;display:block}.tag{position:absolute;right:9px;top:9px;padding:6px 9px;border-radius:999px;background:rgba(8,7,13,.82);border:1px solid #8b3bd0;font-size:11px;font-weight:900}.card-info{padding:13px}.type{color:#b94fff;font-size:13px;font-weight:800}.card h3{margin:6px 0;font-size:17px}.card p{margin:0;color:#aaa6b7;line-height:1.4;min-height:42px;font-size:13px}.price{font-size:20px;font-weight:900;margin:12px 0}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.small-btn{padding:10px;border-radius:9px;border:1px solid #4b2867;background:#0d1018;color:#fff;font-weight:800}.small-btn.add{border:0;background:linear-gradient(90deg,#8e28ee,#b34cff)}
+.section{padding:26px 28px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:10px}.section h2{margin:0;font-size:25px}.muted{color:var(--muted)}.pills{display:flex;gap:9px;overflow:auto;padding:17px 0 13px;scrollbar-width:none}.pills::-webkit-scrollbar{display:none}.pill{white-space:nowrap;border:1px solid #4a2864;background:#0c0e15;color:#eee;padding:9px 15px;border-radius:999px}.pill.active,.pill:hover{background:linear-gradient(90deg,#8f2cf0,#b54cff);border-color:#b54cff}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:#0b0e16;border:1px solid #3a2052;border-radius:15px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#a13cff;box-shadow:0 15px 35px rgba(75,20,110,.2)}.art{height:190px;position:relative;overflow:hidden;background:#160a22}.art svg{width:100%;height:100%;display:block}.art img{width:100%;height:100%;display:block;object-fit:cover}.detail-art img{width:100%;height:100%;display:block;object-fit:contain;background:#080a10}.upload-box{grid-column:1/-1;border:1px dashed #7540a0;border-radius:12px;padding:12px;background:#090b11}.upload-box input[type=file]{width:100%;color:#ddd}.upload-note{display:block;color:#8f8a99;font-size:11px;margin-top:7px}.upload-preview{display:none;margin-top:10px;border-radius:12px;overflow:hidden;border:1px solid #3c2450;background:#07080d;max-height:260px}.upload-preview img{width:100%;max-height:260px;object-fit:contain;display:block}.upload-status{margin-top:7px;font-size:12px;color:#aaa}.upload-status.ok{color:#7ee8b0}.upload-status.error{color:#ff8da4}.tag{position:absolute;right:9px;top:9px;padding:6px 9px;border-radius:999px;background:rgba(8,7,13,.82);border:1px solid #8b3bd0;font-size:11px;font-weight:900}.card-info{padding:13px}.type{color:#b94fff;font-size:13px;font-weight:800}.card h3{margin:6px 0;font-size:17px}.card p{margin:0;color:#aaa6b7;line-height:1.4;min-height:42px;font-size:13px}.price{font-size:20px;font-weight:900;margin:12px 0}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.small-btn{padding:10px;border-radius:9px;border:1px solid #4b2867;background:#0d1018;color:#fff;font-weight:800}.small-btn.add{border:0;background:linear-gradient(90deg,#8e28ee,#b34cff)}
 .empty{padding:35px;text-align:center;border:1px dashed #43245c;border-radius:14px;color:#aaa;grid-column:1/-1}.about{margin:30px 28px 0;padding:20px;border:1px solid #30203e;border-radius:15px;background:#0b0e15}.about h3{margin:0 0 6px}.about p{color:#aaa;line-height:1.5}
 .bottom-nav{display:none}.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(7px);display:none;align-items:center;justify-content:center;padding:16px;z-index:80}.modal.show{display:flex}.box{width:min(760px,100%);max-height:92vh;overflow:auto;background:#0d1018;border:1px solid #64318b;border-radius:20px;box-shadow:0 25px 90px #000;padding:18px}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.modal-head h2{margin:0}.close{background:#17111e;border:1px solid #4d2a68;color:#fff;border-radius:10px;padding:8px 12px}.detail-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:14px}.detail-art{height:310px;border-radius:15px;overflow:hidden;border:1px solid #4a2762}.detail-art svg{width:100%;height:100%}.detail h2{margin:8px 0}.detail p{color:#aaa;line-height:1.5}.detail-price{font-size:28px;font-weight:900;margin:15px 0}.full{width:100%}.cart-row{display:flex;gap:12px;align-items:center;border-bottom:1px solid #24172f;padding:12px 0}.cart-row-main{flex:1}.cart-row-main b{display:block}.cart-row-main small{color:#999}.qty{display:flex;align-items:center;gap:6px}.qty button{width:31px;height:31px;border-radius:8px;border:1px solid #4b2868;background:#11131b;color:#fff}.remove{border:0;background:none;color:#d77cff;font-size:12px}.total{display:flex;justify-content:space-between;font-size:21px;font-weight:900;padding:16px 0}.form{display:grid;gap:9px}.form input,.form textarea,.form select,.owner input,.owner select{width:100%;background:#090b11;color:#fff;border:1px solid #3c2450;border-radius:9px;padding:11px;outline:none}.form textarea{min-height:75px;resize:vertical}.form label{font-size:12px;color:#aaa}.collection-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}.variant{border:1px solid #38204d;border-radius:14px;overflow:hidden;background:#0a0c12}.variant-art{height:210px}.variant-art svg{width:100%;height:100%;display:block}.variant-body{padding:12px}.variant-body h3{margin:0 0 5px}.variant-body p{color:#aaa;font-size:13px;line-height:1.4}.variant-price{font-weight:900;font-size:18px;margin:10px 0}.owner{margin:30px 28px 0;padding:18px;border:1px solid #5c2e7d;border-radius:16px;background:linear-gradient(145deg,#120a19,#0b0e15)}.owner h3{margin-top:0}.owner small{color:#999}.owner-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.owner-list{margin-top:12px;display:grid;gap:6px}.owner-row{display:flex;justify-content:space-between;gap:8px;align-items:center;background:#090b11;border:1px solid #2c1a3a;border-radius:9px;padding:9px}
 .order-list{display:grid;gap:9px;margin-top:12px}.order-card{border:1px solid #352047;background:#090b11;border-radius:13px;padding:12px}.order-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.order-id{font-weight:900;color:#c86cff}.order-meta{color:#999;font-size:12px;margin-top:3px}.order-items{margin:10px 0;padding:9px;border-radius:9px;background:#0d1018;color:#ddd;font-size:13px;line-height:1.5}.order-status{border:1px solid #49305c;background:#15101b;color:#fff;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:900}.order-status.paid{border-color:#3d8c69;color:#7ee8b0}.order-status.delivered{border-color:#7554b0;color:#d1b5ff}.order-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}.order-actions select,.order-actions input{width:100%;background:#090b11;color:#fff;border:1px solid #3c2450;border-radius:8px;padding:9px}.order-empty{padding:25px;text-align:center;border:1px dashed #43245c;border-radius:12px;color:#999}
@@ -25,14 +20,6 @@
 .danger{background:#6d2037!important}.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:#15101c;border:1px solid #8141ae;color:#fff;padding:11px 15px;border-radius:999px;opacity:0;pointer-events:none;z-index:120;transition:.2s;box-shadow:0 10px 35px #000}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sidebar{display:none}.main{margin-left:0;width:100%;padding-bottom:78px}.bottom-nav{display:flex;position:fixed;left:0;right:0;bottom:0;height:68px;background:rgba(5,7,12,.96);border-top:1px solid #2b183b;z-index:60;overflow-x:auto}.bottom-nav button{min-width:76px;flex:1;background:transparent;border:0;color:#ddd;font-size:11px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}.bottom-nav button.active{color:#fff;background:linear-gradient(180deg,#9b32ff,#741bd0)}.bottom-nav .bi{font-size:20px}.topbar{padding:11px 16px}.hero,.section,.owner,.about{margin-left:16px;margin-right:16px}.section{padding-left:0;padding-right:0}.hero-copy{padding:27px}.hero h1{font-size:40px}.hero-orb{right:-35px}.owner{margin-top:25px}}
 @media(max-width:620px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.card-info{padding:10px}.card h3{font-size:15px}.card p{font-size:12px;min-height:48px}.art{height:145px}.card-actions{grid-template-columns:1fr}.hero{min-height:260px}.hero h1{font-size:34px}.hero p{font-size:14px}.hero-orb{width:150px;height:150px;right:-55px;bottom:-30px}.detail-layout{grid-template-columns:1fr}.detail-art{height:240px}.collection-grid{grid-template-columns:1fr}.owner-grid{grid-template-columns:1fr}.top-actions .user-btn{display:none}.search input{padding-right:12px}.search .sicon{display:none}.search input{padding-left:14px}}
-
-.owner-upload{grid-column:1/-1;border:1px dashed rgba(170,70,255,.55);border-radius:16px;padding:14px;background:rgba(125,35,190,.07)}
-.owner-upload-label{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border:1px solid rgba(190,90,255,.45);border-radius:12px;background:rgba(90,20,140,.18);font-weight:800;cursor:pointer;text-align:center}
-.owner-upload input[type=file]{display:none}
-.owner-upload small{display:block;margin-top:8px;opacity:.7;text-align:center}
-#ownerImagePreview{display:none;width:100%;max-height:240px;object-fit:contain;border-radius:12px;margin-top:10px;background:#080a10;border:1px solid rgba(170,70,255,.25)}
-.product-photo{width:100%;height:100%;display:block;object-fit:cover;border-radius:inherit}
-.detail-art .product-photo{max-height:520px}
 </style>
 </head>
 <body>
@@ -68,15 +55,15 @@
 <div id="grid" class="grid"></div></section>
 <div class="about"><h3>😈 Shadow-X's corner</h3><p>Every category has its own vibe: anime/action, fun gaming, professional business, clean creator, tech and premium styles. Add products to the cart, open details, or use the owner controls to manage your shop.</p></div>
 <section class="owner" id="ownerSection">
-  <div class="owner-head"><div><div class="owner-kicker">PRIVATE • SHADOW-X • V22</div><h3>👑 Owner Dashboard • Orders</h3><small>Manage your catalog from this browser. Owner account required.</small></div><div class="owner-status" id="ownerStatus">🔒 Locked</div></div>
+  <div class="owner-head"><div><div class="owner-kicker">PRIVATE • SHADOW-X • V24.0</div><h3>👑 Owner Dashboard • Orders</h3><small>Manage your catalog from this browser. Owner PIN required.</small></div><div class="owner-status" id="ownerStatus">🔒 Locked</div></div>
   <div id="ownerLocked" class="owner-lock"><div class="lock-orb">👑</div><div><b>Shadow-Shop Command Center</b><p>Products, orders, prices, visibility and catalog tools in one place.</p></div><button class="primary" onclick="unlockOwner()">Unlock dashboard</button></div>
   <div id="ownerArea" style="display:none">
     <div class="owner-stats"><div><span id="statTotal">0</span><small>Total products</small></div><div><span id="statVisible">0</span><small>Visible now</small></div><div><span id="statHidden">0</span><small>Hidden</small></div><div><span id="statValue">0</span><small>Catalog value</small></div></div>
     <div class="owner-tabs"><button class="owner-tab active" onclick="ownerTab('products',this)">📦 Products</button><button class="owner-tab" onclick="ownerTab('orders',this)">🧾 Orders</button><button class="owner-tab" onclick="ownerTab('add',this)">＋ Add product</button><button class="owner-tab" onclick="ownerTab('tools',this)">⚙ Tools</button></div>
     <div id="ownerProductsTab" class="owner-panel-tab"><div class="owner-toolbar"><b>Manage catalog</b><div style="display:flex;gap:7px;align-items:center;flex:1;justify-content:flex-end"><input id="ownerManageSearch" oninput="renderOwnerList()" placeholder="Search your products..."><button class="small-btn" onclick="document.getElementById('ownerManageSearch').value='';renderOwnerList()">Clear</button></div></div><div id="ownerList" class="owner-list"></div></div>
     <div id="ownerOrdersTab" class="owner-panel-tab" style="display:none"><div class="owner-toolbar"><b>Order management</b><div style="display:flex;gap:7px;align-items:center;flex:1;justify-content:flex-end"><select id="orderFilter" onchange="renderOwnerOrders()" style="max-width:150px"><option value="All">All statuses</option><option value="New">New</option><option value="Paid">Paid</option><option value="Delivered">Delivered</option></select><button class="small-btn" onclick="renderOwnerOrders()">Refresh</button></div></div><div id="ownerOrdersList" class="order-list"></div></div>
-    <div id="ownerAddTab" class="owner-panel-tab" style="display:none"><div class="owner-form-title">Create a new product</div><div class="owner-grid"><input id="ownerName" placeholder="Product name"><input id="ownerPrice" type="number" min="1" placeholder="Price in FCFA"><select id="ownerType"><option>Wallpaper</option><option>Thumbnail</option><option>Profile</option><option>Banner</option><option>Logo</option><option>Social</option><option>Pack</option></select><select id="ownerStyle"><option value="anime">Anime / Action</option><option value="gaming">Gaming / Fun</option><option value="business">Business / Professional</option><option value="creator">Creator / Clean</option><option value="tech">Tech / Neon</option><option value="premium">Premium / Luxury</option></select><input id="ownerDesc" placeholder="Short description"><div class="owner-upload"><label class="owner-upload-label" for="ownerImage">🖼️ Choose wallpaper / image from phone</label><input id="ownerImage" type="file" accept="image/png,image/jpeg,image/webp" onchange="previewOwnerImage(event)"><small>PNG, JPG or WebP • the image is compressed automatically for phone storage</small><img id="ownerImagePreview" alt="Selected product preview"></div></div><div class="hero-actions"><button class="primary" onclick="ownerAddProduct()">✨ Publish product</button><button class="secondary" onclick="clearOwnerForm()">Clear</button></div></div>
-    <div id="ownerToolsTab" class="owner-panel-tab" style="display:none"><div class="tool-grid"><button class="secondary" onclick="restoreHidden()">♻ Restore hidden</button><button class="secondary" onclick="exportCatalog()">⬇ Export catalog</button><button class="secondary" onclick="ownerLogout()">🔒 Lock dashboard</button><button class="danger" onclick="clearCustomProducts()">🗑 Remove my added products</button></div><p class="owner-warning">Owner controls are stored locally in this browser and your existing catalog data is preserved. Orders are stored locally in this browser. Owner login uses Supabase authentication. Product images added here are stored in this browser; cloud catalog publishing is a separate upgrade.</p></div>
+    <div id="ownerAddTab" class="owner-panel-tab" style="display:none"><div class="owner-form-title">Create a new product</div><div class="owner-grid"><input id="ownerName" placeholder="Product name"><input id="ownerPrice" type="number" min="0" step="1" inputmode="numeric" placeholder="Price in FCFA (0 = FREE)"><select id="ownerType"><option>Wallpaper</option><option>Thumbnail</option><option>Profile</option><option>Banner</option><option>Logo</option><option>Social</option><option>Pack</option></select><select id="ownerStyle"><option value="anime">Anime / Action</option><option value="gaming">Gaming / Fun</option><option value="business">Business / Professional</option><option value="creator">Creator / Clean</option><option value="tech">Tech / Neon</option><option value="premium">Premium / Luxury</option></select><input id="ownerDesc" placeholder="Short description"><div class="upload-box"><b>Product image</b><input id="ownerImageFile" type="file" accept="image/png,image/jpeg,image/webp,image/*" onchange="previewOwnerImage(this)"><span class="upload-note">Choose an image from your phone gallery. PNG, JPG or WebP. The image is compressed automatically.</span><div id="ownerImagePreview" class="upload-preview"><img id="ownerImagePreviewImg" alt="Product preview"></div><div id="ownerImageStatus" class="upload-status"></div></div></div><div class="hero-actions"><button id="publishProductBtn" class="primary" onclick="ownerAddProduct()">✨ Publish product</button><button class="secondary" onclick="clearOwnerForm()">Clear</button></div></div>
+    <div id="ownerToolsTab" class="owner-panel-tab" style="display:none"><div class="tool-grid"><button class="secondary" onclick="restoreHidden()">♻ Restore hidden</button><button class="secondary" onclick="exportCatalog()">⬇ Export catalog</button><button class="secondary" onclick="ownerLogout()">🔒 Lock dashboard</button><button class="danger" onclick="clearCustomProducts()">🗑 Remove my added products</button></div><p class="owner-warning">Owner controls are stored locally in this browser and your existing catalog data is preserved. Orders are stored locally in this browser. This PIN gate is suitable for your current offline/local shop, but it is not real server-side security yet.</p></div>
   </div>
 </section>
 </main></div>
@@ -89,17 +76,92 @@
 <div class="modal" id="collectionModal" onclick="if(event.target===this)closeModal('collectionModal')"><div class="box"><div class="modal-head"><div><h2 id="collectionTitle">Collection</h2><div class="muted">Choose a design and add it to your cart.</div></div><button class="close" onclick="closeModal('collectionModal')">✕</button></div><div id="collectionGrid" class="collection-grid"></div></div></div>
 <div class="toast" id="toast"></div>
 <script>
-// Shadow-Shop V23 online backend
+// Shadow-Shop V24.0 • online backend + automatic session refresh
 const SUPABASE_URL = 'https://jaalaqferztuyxpklhvo.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_WyyAKm3hx3kjK0JCJlElew_tXXfabuu';
+const SESSION_KEY = 'shadowShopSupabaseSession';
 let supabaseSession = null;
-async function sbFetch(path, options={}){
+let refreshPromise = null;
+
+function sessionExpiryMs(session=supabaseSession){
+  try{
+    if(Number(session?.expires_at)) return Number(session.expires_at)*1000;
+    if(session?.access_token){
+      const part=session.access_token.split('.')[1];
+      if(part){
+        const payload=JSON.parse(atob(part.replace(/-/g,'+').replace(/_/g,'/')));
+        if(Number(payload.exp)) return Number(payload.exp)*1000;
+      }
+    }
+  }catch(e){}
+  if(Number(session?.expires_in)&&Number(session?.created_at)) return (Number(session.created_at)+Number(session.expires_in))*1000;
+  return 0;
+}
+function sessionNeedsRefresh(session=supabaseSession){
+  const exp=sessionExpiryMs(session);
+  return !!session?.access_token && !!exp && exp-Date.now()<90000;
+}
+function storeSupabaseSession(session){
+  if(!session?.access_token) return;
+  supabaseSession=session;
+  try{localStorage.setItem(SESSION_KEY,JSON.stringify(session))}catch(e){}
+}
+function clearSupabaseSession(showToast=true){
+  supabaseSession=null;
+  try{localStorage.removeItem(SESSION_KEY)}catch(e){}
+  ownerUnlocked=false;
+  const locked=document.getElementById('ownerLocked'), area=document.getElementById('ownerArea'), status=document.getElementById('ownerStatus');
+  if(locked)locked.style.display='flex';
+  if(area)area.style.display='none';
+  if(status)status.textContent='🔒 Locked';
+  if(showToast)toast('Owner session expired. Please sign in again.');
+}
+async function refreshSupabaseSession(force=false){
+  if(refreshPromise) return refreshPromise;
+  if(!supabaseSession?.refresh_token){clearSupabaseSession(false);return false;}
+  if(!force && !sessionNeedsRefresh(supabaseSession)) return true;
+  refreshPromise=(async()=>{
+    try{
+      const res=await fetch(SUPABASE_URL+'/auth/v1/token?grant_type=refresh_token',{
+        method:'POST',
+        headers:{apikey:SUPABASE_KEY,'Content-Type':'application/json'},
+        body:JSON.stringify({refresh_token:supabaseSession.refresh_token})
+      });
+      const text=await res.text();
+      let data=null;try{data=text?JSON.parse(text):null}catch(e){data=null}
+      if(!res.ok||!data?.access_token) throw new Error(data?.msg||data?.message||data?.error_description||'Session refresh failed');
+      storeSupabaseSession(data);
+      ownerUnlocked=true;
+      return true;
+    }catch(e){
+      clearSupabaseSession(false);
+      return false;
+    }finally{refreshPromise=null}
+  })();
+  return refreshPromise;
+}
+async function ensureSupabaseSession(){
+  if(!supabaseSession?.access_token){return false}
+  if(sessionNeedsRefresh(supabaseSession)) return await refreshSupabaseSession(true);
+  return true;
+}
+async function sbFetch(path, options={}, retry=true){
+  const isAuthEndpoint=path.startsWith('/auth/v1/token');
+  if(!isAuthEndpoint) await ensureSupabaseSession();
   const headers={apikey:SUPABASE_KEY,'Content-Type':'application/json',...(options.headers||{})};
-  if(supabaseSession?.access_token) headers.Authorization='Bearer '+supabaseSession.access_token;
-  const res=await fetch(SUPABASE_URL+path,{...options,headers});
+  if(supabaseSession?.access_token && !isAuthEndpoint) headers.Authorization='Bearer '+supabaseSession.access_token;
+  let res=await fetch(SUPABASE_URL+path,{...options,headers});
+  if(res.status===401 && retry && !isAuthEndpoint && supabaseSession?.refresh_token){
+    const refreshed=await refreshSupabaseSession(true);
+    if(refreshed){
+      const retryHeaders={apikey:SUPABASE_KEY,'Content-Type':'application/json',...(options.headers||{})};
+      if(supabaseSession?.access_token)retryHeaders.Authorization='Bearer '+supabaseSession.access_token;
+      res=await fetch(SUPABASE_URL+path,{...options,headers:retryHeaders});
+    }
+  }
   const text=await res.text();
-  let data=null; try{data=text?JSON.parse(text):null}catch(e){data=text}
-  if(!res.ok) throw new Error(data?.message||data?.error_description||data?.error||'Supabase request failed');
+  let data=null;try{data=text?JSON.parse(text):null}catch(e){data=text}
+  if(!res.ok) throw new Error(data?.message||data?.error_description||data?.msg||data?.error||'Supabase request failed');
   return data;
 }
 async function ownerLogin(){
@@ -107,14 +169,26 @@ async function ownerLogin(){
   const password=prompt('Owner password:'); if(password===null)return;
   try{
     const data=await sbFetch('/auth/v1/token?grant_type=password',{method:'POST',body:JSON.stringify({email:email.trim(),password})});
-    supabaseSession=data; localStorage.setItem('shadowShopSupabaseSession',JSON.stringify(data));
+    storeSupabaseSession(data);
     ownerUnlocked=true; document.getElementById('ownerLocked').style.display='none'; document.getElementById('ownerArea').style.display='block'; document.getElementById('ownerStatus').textContent='🟢 Online';
     await renderOwnerList(); await renderOwnerOrders(); toast('Owner signed in 😈');
   }catch(e){toast('Login failed: '+e.message);}
 }
-function restoreSupabaseSession(){try{const x=JSON.parse(localStorage.getItem('shadowShopSupabaseSession')||'null');if(x?.access_token){supabaseSession=x;ownerUnlocked=true;return true}}catch(e){} return false}
+async function restoreSupabaseSession(){
+  try{
+    const x=JSON.parse(localStorage.getItem(SESSION_KEY)||'null');
+    if(!x?.access_token) return false;
+    supabaseSession=x;
+    if(sessionNeedsRefresh(x)){
+      const ok=await refreshSupabaseSession(true);
+      if(!ok)return false;
+    }
+    ownerUnlocked=true;
+    return true;
+  }catch(e){return false}
+}
 async function onlineOrders(){
-  if(!supabaseSession?.access_token){toast('Sign in as owner first.');return []}
+  if(!await ensureSupabaseSession()){toast('Owner session expired. Please sign in again.');return []}
   try{return await sbFetch('/rest/v1/orders?select=*&order=created_at.desc',{headers:{Prefer:'return=representation'}})}catch(e){toast('Could not load online orders: '+e.message);return []}
 }
 async function uploadOrder(order){
@@ -149,7 +223,7 @@ let products=[];let cart=[];let currentCategory='All';let ownerUnlocked=false;le
 function safeJSON(key,fallback){try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch(e){return fallback}}
 const saved=safeJSON('shadowShopProductsV20',[]);const hidden=new Set(safeJSON('shadowShopHiddenV20',[]));
 products=[...BASE_PRODUCTS,...saved].filter(p=>!hidden.has(p.name));products.forEach((p,i)=>p.id=p.id||('p'+i+'-'+p.name.replace(/[^a-z0-9]/gi,'')));
-function money(n){return Number(n).toLocaleString('en-US')+' FCFA'}
+function money(n){const v=Number(n)||0;return v===0?'FREE • 0 FCFA':v.toLocaleString('en-US')+' FCFA'}
 function esc(s){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function artSvg(p,seed=0){
  const palettes={anime:['#16072c','#9d35ff','#e2a2ff'],gaming:['#071d38','#20a8ff','#72e8ff'],business:['#17231f','#b9904e','#f4d99a'],creator:['#101b26','#45c8db','#b7fbff'],tech:['#071c2b','#a83cff','#55eaff'],premium:['#261b07','#b98a2f','#fff0a8']};let c=palettes[p.style]||palettes.anime;let b='';
@@ -163,8 +237,30 @@ function artSvg(p,seed=0){
  if(p.type==='Pack'){const boxes=[[90,80,520,285],[680,80,1110,285],[90,365,520,570],[680,365,1110,570]];boxes.forEach((q,j)=>{b+=`<rect x="${q[0]}" y="${q[1]}" width="${q[2]-q[0]}" height="${q[3]-q[1]}" rx="25" fill="rgba(0,0,0,.25)" stroke="${c[(j%2)+1]}" stroke-width="5"/>`;b+=circle(q[0]+75,q[1]+70,28,c[2],'rgba(255,255,255,.05)',4);b+=line(q[0]+130,q[1]+60,q[2]-35,q[1]+60,'#fff',4)})}
  return `<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g${seed}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${c[0]}"/><stop offset="1" stop-color="${c[1]}"/></linearGradient><filter id="gl${seed}"><feGaussianBlur stdDeviation="18"/></filter></defs><rect width="1200" height="675" fill="url(#g${seed})"/><circle cx="980" cy="100" r="150" fill="${c[1]}" opacity=".16" filter="url(#gl${seed})"/>${b}</svg>`;
 }
-function productArt(p,seed=0){return p.image?`<img class="product-photo" src="${p.image}" alt="${esc(p.name)}" loading="lazy">`:artSvg(p,seed)}
-function render(list=products){const grid=document.getElementById('grid');if(!list.length){grid.innerHTML='<div class="empty">No designs found. Try another category or search. 😈</div>';return}grid.innerHTML=list.map((p,i)=>`<article class="card"><div class="art">${productArt(p,i)}<span class="tag">✦ ${esc(p.tag)}</span></div><div class="card-info"><div class="type">${esc(p.type)}</div><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><div class="price">${money(p.price)}</div><div class="card-actions"><button class="small-btn" onclick="openDetails('${p.id}')">View details</button><button class="small-btn add" onclick="addToCart('${p.id}')">🛒 Add to cart</button></div></div></article>`).join('');document.getElementById('resultText').textContent=list.length+' design'+(list.length===1?'':'s')+' available'}
+function artHtml(p,seed=0){
+ if(p&&p.imageData){return `<img src="${esc(p.imageData)}" alt="${esc(p.name||'Product image')}" loading="lazy">`}
+ return artSvg(p,seed)
+}
+function previewOwnerImage(input){
+ const file=input?.files?.[0];const preview=document.getElementById('ownerImagePreview'),img=document.getElementById('ownerImagePreviewImg'),status=document.getElementById('ownerImageStatus');
+ if(!file){preview.style.display='none';img.removeAttribute('src');status.textContent='';status.className='upload-status';return}
+ if(!file.type.startsWith('image/')){input.value='';preview.style.display='none';status.textContent='Please choose an image file.';status.className='upload-status error';return}
+ if(file.size>12*1024*1024){input.value='';preview.style.display='none';status.textContent='Image is too large. Choose one under 12 MB.';status.className='upload-status error';return}
+ const url=URL.createObjectURL(file);img.onload=()=>{URL.revokeObjectURL(url)};img.src=url;preview.style.display='block';status.textContent='✓ Image selected';status.className='upload-status ok';
+}
+function readImage(file){return new Promise((resolve,reject)=>{const reader=new FileReader();const timer=setTimeout(()=>{try{reader.abort()}catch(e){}reject(new Error('Image reading timed out.'))},12000);reader.onload=()=>{clearTimeout(timer);resolve(reader.result)};reader.onerror=()=>{clearTimeout(timer);reject(new Error('Could not read the image.'))};reader.onabort=()=>{clearTimeout(timer);reject(new Error('Image reading was cancelled.'))};reader.readAsDataURL(file)})}
+function canvasBlob(canvas,type,quality){return new Promise((resolve,reject)=>{let done=false;const timer=setTimeout(()=>{if(done)return;done=true;try{const data=canvas.toDataURL(type,quality);const arr=data.split(',')[1];const bin=atob(arr);const bytes=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);resolve(new Blob([bytes],{type:data.slice(5,data.indexOf(';'))}))}catch(e){reject(new Error('Image compression timed out.'))}},10000);canvas.toBlob(blob=>{if(done)return;done=true;clearTimeout(timer);if(blob)resolve(blob);else reject(new Error('Your browser could not compress this image.'))},type,quality)})}
+async function compressOwnerImage(file){
+ const raw=await readImage(file);const img=new Image();
+ await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(new Error('Image loading timed out.')),12000);img.onload=()=>{clearTimeout(timer);resolve()};img.onerror=()=>{clearTimeout(timer);reject(new Error('Could not decode this image.'))};img.src=raw});
+ const max=1200,scale=Math.min(1,max/Math.max(img.naturalWidth||img.width,img.naturalHeight||img.height));const w=Math.max(1,Math.round((img.naturalWidth||img.width)*scale)),h=Math.max(1,Math.round((img.naturalHeight||img.height)*scale));
+ const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;const ctx=canvas.getContext('2d');if(!ctx)throw new Error('Canvas is unavailable on this browser.');ctx.drawImage(img,0,0,w,h);
+ let blob=null;for(const q of [.78,.68,.58,.48]){blob=await canvasBlob(canvas,'image/webp',q);if(blob.size<=1100000)break}
+ if(!blob||blob.size>1100000){for(const q of [.78,.68,.58,.48]){blob=await canvasBlob(canvas,'image/jpeg',q);if(blob.size<=1100000)break}}
+ if(!blob||blob.size>1250000)throw new Error('This image is still too large after compression. Try a smaller image.');
+ return await readImage(new File([blob],'shadow-shop-image.'+(blob.type==='image/webp'?'webp':'jpg'),{type:blob.type}));
+}
+function render(list=products){const grid=document.getElementById('grid');if(!list.length){grid.innerHTML='<div class="empty">No designs found. Try another category or search. 😈</div>';return}grid.innerHTML=list.map((p,i)=>`<article class="card"><div class="art">${artHtml(p,i)}<span class="tag">✦ ${esc(p.tag)}</span></div><div class="card-info"><div class="type">${esc(p.type)}</div><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><div class="price">${money(p.price)}</div><div class="card-actions"><button class="small-btn" onclick="openDetails('${p.id}')">View details</button><button class="small-btn add" onclick="addToCart('${p.id}')">🛒 Add to cart</button></div></div></article>`).join('');document.getElementById('resultText').textContent=list.length+' design'+(list.length===1?'':'s')+' available'}
 function filtered(){if(currentCategory==='All')return products;return products.filter(p=>p.type===currentCategory)}
 function goCategory(cat,btn){currentCategory=cat;document.getElementById('searchInput').value='';document.querySelectorAll('.nav-btn').forEach(x=>x.classList.toggle('active',x.dataset.nav===cat&&cat!=='All'?true:(cat==='All'&&x.textContent.trim()==='Home')));document.querySelectorAll('.bottom-nav button').forEach(x=>x.classList.toggle('active',x.dataset.bottom===cat));document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));if(btn?.classList.contains('pill'))btn.classList.add('active');document.getElementById('sectionTitle').textContent=cat==='All'?'Featured designs':cat==='Wallpaper'?'Wallpaper collection':cat==='Thumbnail'?'Thumbnail collection':cat+' collection';render(filtered());document.getElementById('shop').scrollIntoView({behavior:'smooth',block:'start'})}
 function searchProducts(q){q=q.trim().toLowerCase();currentCategory='All';document.querySelectorAll('.pill,.bottom-nav button').forEach(x=>x.classList.remove('active'));let list=!q?products:products.filter(p=>(p.name+' '+p.type+' '+p.tag+' '+p.desc).toLowerCase().includes(q));document.getElementById('sectionTitle').textContent=q?'Search results':'Featured designs';render(list)}
@@ -207,33 +303,62 @@ async function checkDelivery(){const code=document.getElementById('deliveryOrder
 
 function openCustomerOrders(){const orders=getOrders();document.getElementById('customerOrdersList').innerHTML=orders.length?orders.slice(0,20).map(o=>`<div class="order-card"><div class="order-top"><div><div class="order-id">${esc(o.id)}</div><div class="order-meta">${new Date(o.createdAt).toLocaleString()}</div></div><span class="order-status ${orderStatusClass(o.status)}">${esc(o.status)}</span></div><div class="order-items">${o.items.map(x=>esc(x.name)+' × '+x.qty).join('<br>')}<hr style="border:0;border-top:1px solid #24172f"><b>${money(o.total)}</b>${o.delivery?'<br><br><b>Delivery:</b> '+esc(o.delivery):''}</div></div>`).join(''):'<div class="order-empty">No orders yet. Your created orders will appear here on this device.</div>';openModal('customerOrdersModal')}
 
-function openDetails(id){const p=products.find(x=>x.id===id);if(!p)return;document.getElementById('detailContent').innerHTML=`<div class="detail-layout"><div class="detail-art">${productArt(p,99)}</div><div class="detail"><div class="type">${esc(p.type)} • ${esc(p.tag)}</div><h2>${esc(p.name)}</h2><p>${esc(p.desc)}</p><div class="detail-price">${money(p.price)}</div><button class="primary full" onclick="addToCart('${p.id}');closeModal('detailModal')">🛒 Add to cart</button><button class="secondary full" style="margin-top:8px" onclick="openCollection('${p.type}')">View more ${esc(p.type)} designs</button></div></div>`;openModal('detailModal')}
+function openDetails(id){const p=products.find(x=>x.id===id);if(!p)return;document.getElementById('detailContent').innerHTML=`<div class="detail-layout"><div class="detail-art">${artHtml(p,99)}</div><div class="detail"><div class="type">${esc(p.type)} • ${esc(p.tag)}</div><h2>${esc(p.name)}</h2><p>${esc(p.desc)}</p><div class="detail-price">${money(p.price)}</div><button class="primary full" onclick="addToCart('${p.id}');closeModal('detailModal')">🛒 Add to cart</button><button class="secondary full" style="margin-top:8px" onclick="openCollection('${p.type}')">View more ${esc(p.type)} designs</button></div></div>`;openModal('detailModal')}
 function openCollection(type){const names={Wallpaper:['Purple Night Hunter','Azure Blade Warrior','Shadow Legion','Cyber Samurai','Crystal Horizon'],Thumbnail:['Epic Raid','Power Awakened','Make It Happen','Boss Level','Victory Moment'],Profile:['Shadow PFP','Fire PFP','Ice PFP','Neon PFP','Royal PFP'],Banner:['Gaming Arena','Business Pro','Creator Neon','Cyber Night','Elite Brand'],Logo:['Business Pro Logo','Gaming Fun Logo','Creator Logo','Tech Logo','Luxury Logo'],Social:['New Drop Promo','Sale Alert','Creator Launch','Gaming Event','Business Offer'],Pack:['Creator Pack','Gaming Pack','Business Pack','Wallpaper Pack','Mega Creator Pack']};const base=filtered();const typeItems=names[type]||[];document.getElementById('collectionTitle').textContent=type+' collection';document.getElementById('collectionGrid').innerHTML=typeItems.map((n,i)=>{const p={name:n,type,tag:type.toUpperCase(),price:[2000,2500,3000,3500,4000][i],desc:'A Shadow-Shop '+type.toLowerCase()+' design ready to add to your order.',style:['anime','gaming','business','tech','premium'][i%5]};const temp={...p,id:'c'+type+i};return `<article class="variant"><div class="variant-art">${artSvg(temp,200+i)}</div><div class="variant-body"><h3>${esc(n)}</h3><p>${esc(p.desc)}</p><div class="variant-price">${money(p.price)}</div><button class="primary full" onclick="addCollection('${esc(n)}','${type}',${p.price},'${p.style}')">Add this design</button></div></article>`}).join('');openModal('collectionModal')}
 function addCollection(name,type,price,style){const p={id:'collection-'+type+'-'+name,name,type,tag:type.toUpperCase(),price,desc:'Collection design from Shadow-Shop.',style};addToCart(p)}
 function openModal(id){document.getElementById(id).classList.add('show')};function closeModal(id){document.getElementById(id).classList.remove('show')}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(()=>t.classList.remove('show'),1800)}
 function openOwner(){document.getElementById('ownerSection').scrollIntoView({behavior:'smooth'});if(!ownerUnlocked)ownerLogin();}
 async function unlockOwner(){return ownerLogin()}
-function ownerLogout(){supabaseSession=null;localStorage.removeItem('shadowShopSupabaseSession');ownerUnlocked=false;document.getElementById('ownerArea').style.display='none';document.getElementById('ownerLocked').style.display='flex';document.getElementById('ownerStatus').textContent='🔒 Locked';toast('Dashboard locked')}
+function ownerLogout(){clearSupabaseSession(false);toast('Dashboard locked')}
 function ownerTab(tab,btn){if(!ownerUnlocked)return;document.querySelectorAll('.owner-tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.getElementById('ownerProductsTab').style.display=tab==='products'?'block':'none';document.getElementById('ownerOrdersTab').style.display=tab==='orders'?'block':'none';document.getElementById('ownerAddTab').style.display=tab==='add'?'block':'none';document.getElementById('ownerToolsTab').style.display=tab==='tools'?'block':'none';if(tab==='products')renderOwnerList();if(tab==='orders')renderOwnerOrders()}
-function clearOwnerForm(){['ownerName','ownerPrice','ownerDesc'].forEach(id=>document.getElementById(id).value='');const f=document.getElementById('ownerImage');if(f)f.value='';const img=document.getElementById('ownerImagePreview');if(img){img.src='';img.style.display='none'}toast('Form cleared')}
-function previewOwnerImage(e){const file=e.target.files&&e.target.files[0];if(!file)return;if(!/^image\/(png|jpe?g|webp)$/i.test(file.type)){toast('Please choose a PNG, JPG or WebP image.');e.target.value='';return}const img=document.getElementById('ownerImagePreview');if(window._shadowPreviewUrl)URL.revokeObjectURL(window._shadowPreviewUrl);window._shadowPreviewUrl=URL.createObjectURL(file);img.src=window._shadowPreviewUrl;img.style.display='block'}
-function compressOwnerImage(file){return new Promise((resolve,reject)=>{if(!file||!file.type||!/^image\/(png|jpe?g|webp)$/i.test(file.type)){reject(new Error('Unsupported image type'));return}const url=URL.createObjectURL(file),im=new Image();let done=false;const finish=(err,val)=>{if(done)return;done=true;URL.revokeObjectURL(url);err?reject(err):resolve(val)};im.onerror=()=>finish(new Error('Could not open image'));im.onload=()=>{try{const max=1000,scale=Math.min(1,max/Math.max(im.naturalWidth||im.width,im.naturalHeight||im.height)),w=Math.max(1,Math.round((im.naturalWidth||im.width)*scale)),h=Math.max(1,Math.round((im.naturalHeight||im.height)*scale)),c=document.createElement('canvas');c.width=w;c.height=h;const ctx=c.getContext('2d',{alpha:false});if(!ctx){finish(new Error('Canvas is not available'));return}ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.fillStyle='#080a10';ctx.fillRect(0,0,w,h);ctx.drawImage(im,0,0,w,h);const makeBlob=(quality)=>new Promise((res,rej)=>c.toBlob(b=>b?res(b):rej(new Error('Could not compress image')),'image/jpeg',quality));(async()=>{try{let blob=await makeBlob(.72);if(blob.size>900000)blob=await makeBlob(.60);if(blob.size>900000)blob=await makeBlob(.50);if(blob.size>1100000){finish(new Error('Image is still too large after compression'));return}const reader=new FileReader();reader.onerror=()=>finish(reader.error||new Error('Could not read compressed image'));reader.onload=()=>finish(null,String(reader.result));reader.readAsDataURL(blob)}catch(err){finish(err)}})()}catch(err){finish(err)}};im.src=url})}
-async function ownerAddProduct(){if(!ownerUnlocked)return;const name=document.getElementById('ownerName').value.trim(),price=Number(document.getElementById('ownerPrice').value),type=document.getElementById('ownerType').value,desc=document.getElementById('ownerDesc').value.trim(),style=document.getElementById('ownerStyle').value,file=document.getElementById('ownerImage')?.files?.[0];if(!name||price<=0||!desc){toast('Fill every product field.');return}if(products.some(x=>x.name.toLowerCase()===name.toLowerCase())){toast('A product with that name already exists.');return}let image='';if(file){try{toast('Preparing image…');image=await compressOwnerImage(file)}catch(e){toast('Image could not be added.');return}}const p={id:'custom-'+Date.now(),name,type,tag:type.toUpperCase(),price,desc,style,custom:true,image};products.push(p);try{saveCustom()}catch(e){products.pop();toast('Storage is full. Try a smaller image or remove an old custom product.');return}render(filtered());renderOwnerList();clearOwnerForm();ownerTab('products',document.querySelector('.owner-tab'));toast('✨ Product published!')}
-function saveCustom(){localStorage.setItem('shadowShopProductsV20',JSON.stringify(products.filter(x=>x.custom)))}
+function clearOwnerForm(){['ownerName','ownerPrice','ownerDesc'].forEach(id=>document.getElementById(id).value='');const f=document.getElementById('ownerImageFile');if(f)f.value='';const preview=document.getElementById('ownerImagePreview'),img=document.getElementById('ownerImagePreviewImg'),status=document.getElementById('ownerImageStatus');if(preview)preview.style.display='none';if(img)img.removeAttribute('src');if(status){status.textContent='';status.className='upload-status'}toast('Form cleared')}
+async function ownerAddProduct(){
+ if(!ownerUnlocked)return;
+ const name=document.getElementById('ownerName').value.trim(),priceRaw=document.getElementById('ownerPrice').value.trim(),type=document.getElementById('ownerType').value,desc=document.getElementById('ownerDesc').value.trim(),style=document.getElementById('ownerStyle').value,file=document.getElementById('ownerImageFile')?.files?.[0];
+ const price=Number(priceRaw);
+ if(!name||priceRaw===''||!Number.isFinite(price)||price<0||!desc){toast('Fill the name, price and description. Price 0 = FREE.');return}
+ if(products.some(x=>x.name.toLowerCase()===name.toLowerCase())){toast('A product with that name already exists.');return}
+ const btn=document.getElementById('publishProductBtn');if(btn){btn.disabled=true;btn.textContent='Preparing image…'}
+ const status=document.getElementById('ownerImageStatus');
+ try{
+   let imageData='';
+   if(file){if(status){status.textContent='Compressing image…';status.className='upload-status'};imageData=await compressOwnerImage(file)}
+   const p={id:'custom-'+Date.now(),name,type,tag:type.toUpperCase(),price,desc,style,custom:true};if(imageData)p.imageData=imageData;
+   products.push(p);if(!saveCustom()){products.pop();return}
+   render(filtered());renderOwnerList();clearOwnerForm();ownerTab('products',document.querySelector('.owner-tab'));
+   toast(price===0?'✨ Free product published!':'✨ Product published!');
+ }catch(e){toast('Product could not be published: '+e.message)}finally{if(btn){btn.disabled=false;btn.textContent='✨ Publish product'}}
+}
+function saveCustom(){try{localStorage.setItem('shadowShopProductsV20',JSON.stringify(products.filter(x=>x.custom)));return true}catch(e){toast('Storage is full. Use a smaller image or remove an old custom product.');return false}}
 function ownerDelete(id){if(!ownerUnlocked)return;const p=products.find(x=>x.id===id);if(!p)return;const action=p.custom?'permanently remove':'hide';if(!confirm((p.custom?'Remove '+p.name+' from your added products?':'Hide '+p.name+' from the shop?')))return;if(p.custom){products=products.filter(x=>x.id!==id);saveCustom();render(filtered());renderOwnerList();toast('Custom product removed')}else{hidden.add(p.name);localStorage.setItem('shadowShopHiddenV20',JSON.stringify([...hidden]));products=products.filter(x=>x.id!==id);render(filtered());renderOwnerList();toast('Built-in product hidden')}}
-function editProduct(id){if(!ownerUnlocked)return;const p=products.find(x=>x.id===id);if(!p)return;const name=prompt('Product name:',p.name);if(name===null)return;const price=prompt('Price in FCFA:',p.price);if(price===null)return;const desc=prompt('Description:',p.desc);if(desc===null)return;const n=name.trim(),pr=Number(price),d=desc.trim();if(!n||pr<=0||!d){toast('Invalid product details.');return}if(products.some(x=>x.id!==id&&x.name.toLowerCase()===n.toLowerCase())){toast('That product name is already used.');return}p.name=n;p.price=pr;p.desc=d;saveCustom();render(filtered());renderOwnerList();toast('Product updated ✨')}
+function editProduct(id){if(!ownerUnlocked)return;const p=products.find(x=>x.id===id);if(!p)return;const name=prompt('Product name:',p.name);if(name===null)return;const price=prompt('Price in FCFA (enter 0 for FREE):',p.price);if(price===null)return;const desc=prompt('Description:',p.desc);if(desc===null)return;const n=name.trim(),pr=Number(price),d=desc.trim();if(!n||!Number.isFinite(pr)||pr<0||!d){toast('Invalid product details. Price 0 is allowed for FREE.');return}if(products.some(x=>x.id!==id&&x.name.toLowerCase()===n.toLowerCase())){toast('That product name is already used.');return}p.name=n;p.price=pr;p.desc=d;if(!saveCustom())return;render(filtered());renderOwnerList();toast('Product updated ✨')}
 function restoreHidden(){if(!ownerUnlocked)return;localStorage.removeItem('shadowShopHiddenV20');toast('Restoring hidden products…');setTimeout(()=>location.reload(),450)}
 function clearCustomProducts(){if(!ownerUnlocked)return;if(!confirm('Remove every product you added with the owner dashboard?'))return;localStorage.removeItem('shadowShopProductsV20');products=products.filter(x=>!x.custom);render(filtered());renderOwnerList();toast('Your added products were removed')}
-function exportCatalog(){if(!ownerUnlocked)return;const data={version:'V23-PWA',exportedAt:new Date().toISOString(),customProducts:products.filter(x=>x.custom),hidden:[...hidden]};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='shadow-shop-catalog.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500);toast('Catalog exported')}
+function exportCatalog(){if(!ownerUnlocked)return;const data={version:'V24.0',exportedAt:new Date().toISOString(),customProducts:products.filter(x=>x.custom),hidden:[...hidden]};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='shadow-shop-catalog.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500);toast('Catalog exported')}
 function renderOwnerList(){const el=document.getElementById('ownerList');if(!el||!ownerUnlocked)return;const q=(document.getElementById('ownerManageSearch')?.value||'').trim().toLowerCase();const list=products.filter(p=>(p.name+' '+p.type+' '+p.tag).toLowerCase().includes(q));el.innerHTML=list.map(p=>`<div class="owner-row"><div class="owner-row-main"><b>${esc(p.name)}</b><small>${esc(p.type)} · ${money(p.price)} · ${p.custom?'Your product':'Built-in product'}</small></div><div class="owner-actions"><button class="small-btn edit" onclick="editProduct('${p.id}')">Edit</button><button class="small-btn danger" onclick="ownerDelete('${p.id}')">Hide</button></div></div>`).join('')||'<div class="empty">No matching products.</div>';const allCount=products.length,hiddenCount=safeJSON('shadowShopHiddenV20',[]).length;document.getElementById('statTotal').textContent=allCount+hiddenCount;document.getElementById('statVisible').textContent=allCount;document.getElementById('statHidden').textContent=hiddenCount;document.getElementById('statValue').textContent=money(products.reduce((sum,p)=>sum+Number(p.price||0),0)).replace(' FCFA','')}
 function showOrdersInfo(){openCustomerOrders()}
 function showContact(){alert('Shadow-Shop contact\n\nFor now, create an order from the cart.\nThe order details can be copied and sent through WhatsApp.')}
 function toggleTheme(){dark=!dark;document.body.style.filter=dark?'none':'brightness(1.08) saturate(.75)';toast(dark?'Dark mode':'Soft mode')}
-restoreSupabaseSession();render();updateCartCount();if(ownerUnlocked){document.getElementById('ownerLocked').style.display='none';document.getElementById('ownerArea').style.display='block';document.getElementById('ownerStatus').textContent='🟢 Online';renderOwnerList();renderOwnerOrders();}
-</script>
-<script>
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(err=>console.warn('Shadow-Shop service worker:',err)));}
+async function initShadowShop(){
+  const restored=await restoreSupabaseSession();
+  render();updateCartCount();
+  if(restored){
+    document.getElementById('ownerLocked').style.display='none';
+    document.getElementById('ownerArea').style.display='block';
+    document.getElementById('ownerStatus').textContent='🟢 Online';
+    renderOwnerList();renderOwnerOrders();
+  }
+  if('serviceWorker' in navigator){
+    try{
+      const reg=await navigator.serviceWorker.register('./sw.js?v=20261002-v24',{updateViaCache:'none'});
+      await reg.update();
+    }catch(e){console.warn('Shadow-Shop service worker update failed',e)}
+  }
+}
+setInterval(()=>{if(supabaseSession?.refresh_token)refreshSupabaseSession(false)},4*60*1000);
+window.addEventListener('online',()=>{if(supabaseSession?.refresh_token)refreshSupabaseSession(true)});
+initShadowShop();
 </script>
 </body>
 </html>
